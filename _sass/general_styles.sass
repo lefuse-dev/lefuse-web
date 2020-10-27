@@ -1,0 +1,204 @@
+@import 'colors.sass'
+
+body
+    font-family: 'Arial', sans-serif
+    display: block
+
+*
+    box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6
+    font-family: Arial Black
+    margin: 0
+
+h1
+    color: #478BFB
+    font-family: Arial Black
+    font-style: normal
+    font-weight: black
+    font-size: 60px
+    line-height: 120%
+
+h2
+    color: #262626
+    font-family: Arial Black
+    font-style: normal
+    font-weight: black
+    font-size: 40px
+    line-height: 48px
+    text-align: center
+    width: 60%
+    @media only screen and (max-width: 1035px)
+        font-family: Cabin
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 120%
+        text-align: center
+        width: 100%
+
+h3
+    align-items: center
+    color: #262626
+    display: flex
+    font-family: Arial Black
+    font-style: normal
+    font-weight: black
+    font-size: 25px
+    justify-content: center
+    line-height: 34px
+    text-align: center
+
+p
+    align-items: center
+    color: #828282
+    display: flex
+    font-family: 'Playfair Display', serif
+    font-weight: normal
+    font-size: 14px
+    line-height: 24px
+    margin: 0
+    justify-content: center
+    text-align: center
+
+.subtitle
+    color: #000000
+    font-family: 'Playfair Display', serif
+    font-style: normal
+    font-size: 20px
+    line-height: 161.19%
+    text-align: left
+    a
+        color: $primary
+        font-family: Arial, Helvetica, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 161.19%
+        text-decoration: underline
+
+a
+    color: #262626
+    font-family: Arial, Helvetica, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 154.3%
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+
+strong
+    font-weight: bold
+
+.btn
+    align-items: center
+    border-radius: 60px
+    display: flex
+    font-family: Arial Black
+    font-style: normal
+    font-weight: 900
+    font-size: 24px
+    line-height: 34px
+    text-align: center
+    justify-content: center
+    padding: 0 2em
+    height: 35px
+
+.btn-sm
+    border-radius: .3em
+    font-weight: 600
+    padding: .5em 1em
+
+.btn-lg
+    border-radius: .3em
+    font-weight: 600
+    padding: .9em 2em
+
+.btn-cta
+    color: $primary
+    background-color: white
+    @media only screen and (max-width: 1035px)
+        margin: .5em 0 !important
+        width: 100%
+
+.btn-cta-outline
+    border: 1px solid $primary
+    color: $primary
+    &:hover
+        color: $primary
+    @media only screen and (max-width: 1035px)
+        margin: .5em 0 !important
+        width: 100%
+.btn-cta-outline-white
+    border: 1px solid white
+    color: white
+    &:hover
+        color: white
+
+.logo
+    background-image: url('../../assets/images/logo.svg')
+    background-position: 0 0
+    background-repeat: no-repeat
+    background-size: contain
+    display: block
+    height: 30px
+    width: 170px
+    @media only screen and (max-width: 1112px)
+        margin-left: 0
+.logo-white
+    background-image: url('../../assets/images/dacodex-logo.svg')
+    background-position: 0 0
+    background-repeat: no-repeat
+    background-size: contain
+    display: block
+    height: 30px
+    width: 170px
+    @media only screen and (max-width: 1112px)
+        margin-left: 0
+
+.card
+    background: #FFFFFF
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.1)
+    border-radius: 30px
+    margin: 0
+    padding: 2em 2em 2.5em 2em
+    width: 325px
+
+// color classes
+.c-text
+    color: #000000
+.c-primary
+    color: $primary
+
+// custom line heights
+.lh-24
+    line-height: 24px
+
+.circle-left
+    background-image: url('../../assets/images/circle-left.svg')
+    background-position: left
+    background-repeat: no-repeat
+    background-size: contain
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    height: 413px
+    width: 206.5px
+    @media only screen and (max-width: 1035px)
+        display: none
+
+.circle-right
+    background-image: url('../../assets/images/circle-right.svg')
+    background-position: right
+    background-repeat: no-repeat
+    background-size: contain
+    display: block
+    position: absolute
+    right: 0
+    top: 0
+    height: 413px
+    width: 206.5px
+    @media only screen and (max-width: 1035px)
+        display: none
