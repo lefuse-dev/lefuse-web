@@ -154,6 +154,58 @@
             p
                 margin-top: 1em
 
+.work
+    display: flex
+    flex-flow: column
+    padding: 5em 5em 7em 5em
+    width: 100%
+    .work-item
+        align-items: flex-start
+        border: solid 1px #000000
+        display: flex
+        margin: 2em 0
+        padding: 4em 3em 0 3em
+        .content-left
+            width: 50%
+        .content-right
+            padding-top: 1em
+            width: 50%
+            h3
+                color: #000000
+                font-family: Arial Black
+                font-style: normal
+                font-weight: 900
+                font-size: 36px
+                line-height: 51px
+            p
+                color: #000000
+                font-family: Playfair Display
+                font-style: normal
+                font-weight: normal
+                font-size: 21px
+                justify-content: flex-start
+                line-height: 28px
+                margin: 1em 0 2em 0
+                text-align: left
+
+.cta
+    align-items: center
+    background: #ACF0FF
+    display: flex
+    flex-flow: column
+    justify-content: center
+    padding: 5em 5em 7em 5em
+    width: 100%
+    h2
+        color: #478BFB
+        font-family: Arial Black
+        font-style: normal
+        font-weight: 900
+        font-size: 64px
+        line-height: 119.6%
+        margin-bottom: 1em
+        text-align: center
+
 footer
     align-items: center
     background: #053645
@@ -206,24 +258,6 @@ footer
             background-image: url('../../assets/images/facebook.svg')
         .instagram
             background-image: url('../../assets/images/instagram.svg')
-    .accent
-        color: #58C0B7
-    .gwa
-        height: auto
-        margin-top: 1em
-        width: 4em
-.locations-container
-    align-items: center
-    display: flex
-    justify-content: flex-start
-    flex-flow: column
-    h2
-        margin-top: 1em
-        margin-bottom: 1em
-    @media only screen and (max-width: 1035px)
-        .subtitle
-            text-align: center
-            padding: 0 1em
 
     .location-list-item
         align-items: flex-start
@@ -315,140 +349,6 @@ footer
             .map
                 .iframe
                     padding: 0 1em
-.nosotros-container
-    align-items: center
-    display: flex
-    justify-content: flex-start
-    flex-flow: column
-    h2
-        margin-top: 1em
-        margin-bottom: 1em
-    @media only screen and (max-width: 1035px)
-        .subtitle
-            text-align: center
-            padding: 0 1em
-
-    $nosotros-item-margin: 40px
-    .nosotros-items-container
-        display: flex
-        flex-flow: column
-        justify-content: flex-start
-        padding: 4em 0
-        width: 100%
-        @media only screen and (max-width: 1035px)
-            padding: 1em 0
-
-        .nosotros-item-1
-            display: flex
-            height: 175px
-            justify-content: center
-            h2
-                margin-right: 1em
-                text-align: right
-                width: 24%
-            .card
-                align-items: center
-                display: flex
-                justify-content: center
-                margin: 2.9em 1em -3em 1em
-                width: 475px
-            @media only screen and (max-width: 1035px)
-                height: 290px
-                flex-wrap: wrap
-                h2
-                    margin: 1em 0 0 0
-                    text-align: center
-                    width: 100%
-                .card
-                    align-items: center
-                    display: flex
-                    justify-content: center
-                    margin: .9em 1em -3em 1em
-                    width: 475px
-
-        .nosotros-item-2
-            background: #F4F4FB
-            display: flex
-            height: 237px
-            padding-top: $nosotros-item-margin * 2
-            margin-bottom: $nosotros-item-margin * 2
-            overflow: visible
-            justify-content: center
-            h2
-                margin-right: 1em
-                text-align: right
-                width: 24%
-            .card
-                align-items: center
-                display: flex
-                height: auto
-                justify-content: center
-                margin: 2.9em 1em -3em 1em
-                width: 475px
-            @media only screen and (max-width: 1035px)
-                height: 290px
-                flex-wrap: wrap
-                h2
-                    margin: 0
-                    text-align: center
-                    width: 100%
-                .card
-                    align-items: center
-                    display: flex
-                    justify-content: center
-                    margin: .9em 1em -3em 1em
-                    width: 475px
-
-.contact-container
-    align-items: center
-    display: flex
-    justify-content: flex-start
-    flex-flow: column
-    padding: 0 1em
-    h2
-        margin-top: 1em
-        margin-bottom: 1em
-    form
-        margin-top: 3em
-        width: 397px
-        @media only screen and (max-width: 1035px)
-            width: 100%
-        label
-            align-items: center
-            color: #828282
-            display: flex
-            font-family: Arial, Helvetica, sans-serif
-            font-style: normal
-            font-weight: normal
-            font-size: 14px
-            line-height: 154.3%
-        input
-            border-radius: 10px
-        textarea
-            border-radius: 10px
-        .btn-cta
-            margin-top: 2em
-            width: 100%
-    .contact-details
-        align-items: center
-        background: #F4F4FB
-        display: flex
-        flex-flow: column
-        justify-content: center
-        margin-top: 4em
-        padding: 3em 4em 6em 4em
-        width: 100%
-        p
-            display: flex
-            a
-                color: $primary
-                margin-left: .5em
-                text-decoration: underline
-                font-weight: 900
-            b
-                color: $text
-                margin-left: .5em
-                font-weight: 900
 
 .modal-content
     border-radius: 30px
@@ -456,66 +356,3 @@ footer
         padding: 1.3em 3em 1em 3em
     .modal-body
         padding: 2em 3em
-
-.faqs-container
-    align-items: center
-    display: flex
-    justify-content: flex-start
-    flex-flow: column
-    padding: 0 1em
-    @media only screen and (max-width: 1035px)
-        width: 100%
-        .faqs-input-container
-            width: 100%
-    h2
-        margin-top: 1em
-        margin-bottom: 1em
-
-    #faqsInput
-        border: solid 1px #BDBDBD
-        border-radius: 10px
-        color: #BDBDBD
-        font-family: Arial, Helvetica, sans-serif
-        font-style: normal
-        font-weight: normal
-        font-size: 14px
-        padding: .7em
-        width: 397px
-        @media only screen and (max-width: 1035px)
-            width: 100%
-    .faqsContent
-        text-align: left
-        display: flex
-        justify-content: center
-        padding: 2em 4em 4em 4em
-        @media only screen and (max-width: 1035px)
-            padding: 1em
-        ul
-            min-width: 606px
-            width: 60%
-            list-style-type: none
-            @media only screen and (max-width: 1035px)
-                padding: 0
-                min-width: 100%
-                width: 100%
-            li
-                width: 100%
-                .subtitle
-                    align-items: center
-                    color: #262626
-                    display: flex
-                    justify-content: flex-start
-                    text-align: left
-                    font-family: Arial, Helvetica, sans-serif
-                    font-style: normal
-                    font-weight: normal
-                    font-size: 20px
-                    line-height: 24px
-                    margin: 15px 0
-                p
-                    justify-content: flex-start
-                    text-align: left
-                .inner-ul
-                    list-style-type: initial
-                    @media only screen and (max-width: 1035px)
-                        padding-left: 2em
