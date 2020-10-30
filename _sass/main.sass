@@ -145,7 +145,7 @@
                     color: #C4C4C4
                     font-family: Arial
                     font-style: normal
-                    font-weight: bold
+                    font-weight: normal
                     margin: 0
                     font-size: 29px
                     line-height: 33px
@@ -207,152 +207,83 @@
         text-align: center
 
 footer
-    align-items: center
-    background: #053645
     display: flex
-    flex-flow: column
-    justify-content: flex-start
-    padding: 6em 8em 6em 8em
-    width: 100%
-    @media only screen and (max-width: 1035px)
-        padding: 4em 1em
-    .footer-logo
-        margin-bottom: 2em
-    .footer-container
+    background-color: #000000
+    flex-wrap: wrap
+    justify-content: space-between
+    color: white
+    padding: 5em 5em 5em 5em
+    .content-left
         display: flex
-        justify-content: center
-        @media only screen and (max-width: 1035px)
-            flex-wrap: wrap
-        .footer-col
+        flex-flow: column
+        max-width: 300px
+        padding-right: 1em
+        .logo-white
+            display: block
+            background-repeat: no-repeat
+            background-image: url('/assets/images/logo-white.svg')
+            height: 30px
+            width: 170px
+        p
+            color: #FFFFFF
+            font-family: Arial
+            font-style: normal
+            font-weight: normal
+            margin: 1.5em 0 1em 0
+            font-size: 18px
+            line-height: 21px
+        .social-links
             align-items: center
             display: flex
-            flex-flow: column
-            padding: 0 1em 1em 1em
-            text-align: center
-            width: 200px
-    a
-        color: #E0E0E0
-        &:hover
-            color: #E0E0E0
-
-    p
-        color: #E0E0E0
-    .social-links
-        align-items: center
-        display: flex
-        margin-top: 1em
-        .social-link
-            background-position: 0 0
-            background-repeat: no-repeat
-            background-size: 100%
-            display: block
-            height: 2em
-            margin: 0 1em .5em 1em
-            width: 2em
-        .link
-            color: $primary
-            text-decoration: underline
-        .linkedin
-            background-image: url('../../assets/images/linkedin.svg')
-        .facebook
-            background-image: url('../../assets/images/facebook.svg')
-        .instagram
-            background-image: url('../../assets/images/instagram.svg')
-
-    .location-list-item
+            margin-top: 1em
+            .social-link
+                background-position: 0 0
+                background-repeat: no-repeat
+                background-size: 100%
+                display: block
+                height: 2em
+                margin: 0 1em .5em 0
+                width: 2em
+            .twitter
+                background-image: url('/assets/images/twitter.svg')
+            .youtube
+                background-image: url('/assets/images/youtube.svg')
+            .github
+                background-image: url('/assets/images/github.svg')
+    .columns-container
         align-items: flex-start
         display: flex
-        flex-wrap: wrap
-        padding-top: 4em
-        width: 100%
-        .left-content
-            align-items: flex-start
+        .col
             display: flex
             flex-flow: column
-            padding: 0 0 0 8em
-            text-align: left
-            width: 40%
+            justify-content: flex-start
+            padding: 0 1em
             h3
-                justify-content: flex-start
-                text-align: left
-            p
-                align-items: flex-start
-                display: flex
-                flex-wrap: wrap
-                justify-content: flex-start
-                padding: 1em 0
-                text-align: left
-                width: 320px
-                b
-                    color: #000000
-        .right-content
-            padding: 0 8em 0 0
-            width: 60%
-            .slick-container
-                .slick-slide
-                    display: flex
-                    justify-content: center
-                    overflow: hidden
-                .slick-current
-                    border-radius: 30px
-                    overflow: hidden
-            .slick-dots li button:before
-                font-size: 14px
-            .slider-nav
-                margin-top: .5em
-                .slick-list
-                    .slick-slide
-                        margin: .5em
-                        border-radius: 30px
-                        overflow: hidden
-                        width: 131px !important
-            .soon
-                align-items: center
-                background-color: #F4F4FB
-                border-radius: 30px
-                display: flex
-                height: 330px
-                margin-bottom: 4em
-                width: 100%
-                justify-content: center
-                h3
-                    font-family: Arial, Helvetica, sans-serif
-                    font-style: normal
-                    font-weight: bold
-                    font-size: 25px
-                    line-height: 120%
-                    display: flex
-                    align-items: center
-                    text-align: center
-                    color: #828282
-        $map-margin: 6em
+                color: #FFFFFF
+                font-family: Arial
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                margin-bottom: 1em
 
-        @media only screen and (max-width: 1035px)
-            justify-content: center
-            padding-top: 2em
-            .left-content
-                justify-content: center
-                max-width: 791px
-                text-align: center
-                padding: 1em
-                width: 100%
-                h3
-                    width: 100%
-                p
-                    width: 100%
-            .right-content
-                padding: 1em
-                width: 100%
-                .slider-nav
-                    height: 150px
-                    overflow: hidden
-            .map
-                .iframe
-                    padding: 0 1em
-
-.modal-content
-    border-radius: 30px
-    .modal-header
-        padding: 1.3em 3em 1em 3em
-    .modal-body
-        padding: 2em 3em
+            .btn-link
+                color: white
+                line-height: 28px
+    .content-right
+        align-items: flex-start
+        display: flex
+        justify-content: flex-end
+        width: 300px
+    .rights-reserved
+        display: flex
+        justify-content: flex-end
+        width: 100%
+        p
+            color: #FFFFFF
+            justify-content: flex-end
+            font-family: Arial
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 176.5%
+            text-align: right
