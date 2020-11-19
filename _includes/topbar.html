@@ -1,10 +1,13 @@
 <div class="topbar">
     <a href="{{site.baseurl}}" class="logo"></a>
-    <nav>
+    <nav class="nav">
         <a {% if page.url == '/services' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/services">SERVICES</a>
         <a {% if page.url == '/work' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/work">WORK</a>
         <a {% if page.url == '/blog' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/blog">BLOG</a>
         <a {% if page.url == '/careers' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/careers">CAREERS</a>
         <a {% if page.url == '/contact' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/contact">CONTACT</a>
     </nav>
+        <a href="#" class="navbar-toggler-container navTrigger">
+            <img src="{{ site.baseurl }}/assets/images/menu-24px.svg" />
+        </a>
 </div>

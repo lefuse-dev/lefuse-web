@@ -17,6 +17,8 @@
         display: flex
         .btn-link
             color: $text
+        @media only screen and (max-width: 1035px)
+            display: none
     .navbar-toggler-container
         align-items: center
         border-radius: 4px
@@ -40,7 +42,7 @@
             left: 0
             padding: 1em 2em
             position: absolute
-            top: 4.7em
+            top: 4.2em
             width: 100%
             .btn-link
                 border-bottom: solid 1px #efefef
@@ -70,7 +72,7 @@
     overflow: hidden
     width: 100%
     @media only screen and (max-width: 1035px)
-        padding: 20px 0 0 0
+        padding: 20px 0 .5em 0
         flex-wrap: wrap
     .content-left
         align-items: flex-start
@@ -79,8 +81,7 @@
         padding-right: 5%
         width: 50%
         @media only screen and (max-width: 1035px)
-            padding: 2em
-            width: 100%
+            display: none
 
     .content-right
         align-items: flex-start
@@ -99,7 +100,10 @@
         @media only screen and (max-width: 1035px)
             align-items: center
             justify-content: center
+            padding: 2em
             width: 100%
+            .btn-cta
+                margin-top: 1.5em !important
 
 .call-to-action
     align-items: center
@@ -116,11 +120,15 @@
     flex-flow: column
     padding: 5em 5em 2em 5em
     width: 100%
+    @media only screen and (max-width: 1035px)
+        padding: 2em
     .services-container
         align-items: flex-start
         display: flex
         justify-content: center
         padding: 5em 3em 3em 3em
+        @media only screen and (max-width: 1035px)
+            padding-top: 1em !important
         .service-item
             align-items: center
             border: solid 1px #000000
@@ -153,7 +161,13 @@
                 margin-top: 1em
             p
                 margin-top: 1em
-
+        @media only screen and (max-width: 1035px)
+            padding: 0
+            flex-wrap: wrap
+            .service-item
+                height: 350px
+                margin: 1em 0 0 0
+                width: 100%
 .work
     display: flex
     flex-flow: column
@@ -189,6 +203,27 @@
                 line-height: 28px
                 margin: 1em 0 2em 0
                 text-align: left
+    @media only screen and (max-width: 1035px)
+        padding: 2em
+        h2
+            padding-bottom: 0
+        .work-item
+            height: auto
+            flex-wrap: wrap
+            padding: 2em
+            .content-left
+                width: 100%
+                img
+                    height: auto
+                    width: 100%
+            .content-right
+                align-items: center
+                display: flex
+                flex-flow: column
+                padding-top: 2em
+                width: 100%
+                h3, p
+                    text-align: center
 
 .cta
     align-items: center
@@ -198,6 +233,8 @@
     justify-content: center
     padding: 5em 5em 9em 5em
     width: 100%
+    @media only screen and (max-width: 1035px)
+        padding: 4em 2em 4.5em 2em
     h2
         color: #478BFB
         font-family: Arial Black
@@ -207,6 +244,10 @@
         line-height: 119.6%
         margin-bottom: 1em
         text-align: center
+        @media only screen and (max-width: 1035px)
+            margin-bottom: .6em
+
+            font-size: 50px
 
 footer
     display: flex
@@ -289,3 +330,17 @@ footer
             font-size: 18px
             line-height: 176.5%
             text-align: right
+    @media only screen and (max-width: 1035px)
+        padding: 2em 2em 2em 2em
+        .columns-container
+            flex-wrap: wrap
+            padding: 1em 0 0 0
+            .col
+                padding: 0
+                width: 100%
+        .content-right
+            justify-content: flex-start
+            padding: 1em 0
+        .rights-reserved
+            justify-content: flex-start
+            padding: 0
