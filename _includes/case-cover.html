@@ -1,9 +1,9 @@
 <div class="case-cover">
-    <h1>OrganizeAnt</h1>
-    <p class="subtitle">An app to automate your accounting</p>
+    <h1>{{ page.title }}</h1>
+    <p class="subtitle">{{ page.subtitle }}</p>
     <div class="case-tags-container">
-        <div class="case-tag">UX Design</div>
-        <div class="case-tag">Web development</div>
-        <div class="case-tag">Product Design</div>
+        {% for tag in page.tags %}
+                <div class="case-tag">{{ tag }}</div>
+        {% endfor %}
     </div>
 </div>
