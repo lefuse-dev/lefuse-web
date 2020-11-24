@@ -6,7 +6,7 @@ tags: design, development
 challenge_p_1: "When OrganizeAnd members reached to us they had this idea of making accounting easier and more accessible for small entrepreneurs but they didn’t know where to start and if it would work or not."
 challenge_p_2: "so what hey were sure of was the following:"
 challenge_p_3: “"It’s really hard for entrepreneurs to do it’s accounting on their own, but they want to save as much as they can specially when they are starting out"”.
-solution_img:
+solution_img: https://via.placeholder.com/543x289.png
 solution_p_1: "We created a platform that does accounting automatically, it syncs with the SATs platform and downloads all the received invoices automatically you will have your accounting balances automatically."
 solution_p_2: "Not capturing or anything just check."
 solution_p_3:
