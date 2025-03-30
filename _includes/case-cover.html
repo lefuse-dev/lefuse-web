@@ -1,9 +1,15 @@
 <div class="case-cover">
     <h1>{{ page.title }}</h1>
-    <p class="subtitle">{{ page.subtitle }}</p>
-    <div class="case-tags-container">
+  
+    {% if page.subtitle %}
+      <p class="subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  
+    {% if page.tags %}
+      <div class="case-tags-container">
         {% for tag in page.tags %}
-                <div class="case-tag">{{ tag }}</div>
+          <div class="case-tag">{{ tag }}</div>
         {% endfor %}
-    </div>
-</div>
+      </div>
+    {% endif %}
+  </div>

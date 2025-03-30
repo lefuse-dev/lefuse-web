@@ -1,18 +1,36 @@
 ---
-layout: page
-title: About
+layout: default
+title: About Lefuse | Digital Publishing Network
+description: Learn more about Lefuse, a digital publishing network specializing in wellness, lifestyle, and performance-driven content.
+keywords: digital publishing, content strategy, affiliate marketing, SEO content, niche websites
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About Lefuse
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+**Lefuse** is a digital publishing network focused on building niche content platforms across wellness, lifestyle, and performance-driven topics.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+We create content experiences that inform, inspire, and convert — using a mix of research-backed content, user-first design, and data-informed strategy.
 
+---
 
-[jekyll-organization]: https://github.com/jekyll
+## What We Do
+
+- Build and manage editorial websites that deliver value through reviews, comparisons, and educational content.
+- Focus on **long-term SEO strategy** to create sustainable organic traffic growth.
+- Collaborate with **trusted affiliate partners** to help users discover high-quality products and services.
+- Continuously optimize for user experience, performance, and relevance.
+
+---
+
+## Our Principles
+
+- **Clarity & Trust:** We write for users first, always.
+- **Scalability:** We build with long-term growth in mind.
+- **Integrity:** We only work with partners that align with our values and respect their audience.
+
+---
+
+## Contact
+
+If you're interested in working with us or learning more, [get in touch here](/contact).
