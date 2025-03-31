@@ -1,14 +1,14 @@
 ---
 layout: default
 title: About Lefuse | Digital Publishing Network
-description: Learn more about Lefuse, a digital publishing network specializing in wellness, lifestyle, and performance-driven content.
+description: Learn more about Lefuse, a digital publishing network specializing in wellness, sports, and performance-driven content.
 keywords: digital publishing, content strategy, affiliate marketing, SEO content, niche websites
 permalink: /about/
 ---
 
 # About Lefuse
 
-**Lefuse** is a digital publishing network focused on building niche content platforms across wellness, lifestyle, and performance-driven topics.
+**Lefuse** is a digital publishing network focused on building niche content platforms across wellness, sports, and performance-driven topics.
 
 We create content experiences that inform, inspire, and convert — using a mix of research-backed content, user-first design, and data-informed strategy.
 
