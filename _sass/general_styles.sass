@@ -116,11 +116,27 @@ strong
     flex-direction: column
     gap: var(--space-5)
 
+.stack > p,
+.stack > .subtitle
+    padding-block: var(--space-1)
+
+.stack > .btn,
+.stack > a.btn
+    padding: var(--space-3) var(--space-5)
+
 .stack-sm
     gap: var(--space-4)
 
 .stack-lg
     gap: var(--space-6)
+
+@media only screen and (max-width: 1035px)
+    .stack > p,
+    .stack > .subtitle
+        padding-block: 0
+    .stack > .btn,
+    .stack > a.btn
+        padding: var(--space-2) var(--space-4)
 
 .btn-sm
     border-radius: .3em
