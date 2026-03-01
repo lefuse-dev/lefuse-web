@@ -1,8 +1,12 @@
 <div class="topbar">
     <a href="{{site.baseurl}}/" class="logo"></a>
     <nav class="nav">
-        <a {% if page.url == '/about' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/about">ABOUT</a>
-        <a {% if page.url == '/contact' %} class="btn-link active" {% endif %} class="btn-link" href="{{site.baseurl}}/contact">CONTACT</a>
+        <a class="btn-link{% if page.url == '/' %} active{% endif %}" href="{{site.baseurl}}/">Home</a>
+        <a class="btn-link{% if page.url == '/products/' %} active{% endif %}" href="{{site.baseurl}}/products">Products</a>
+        <a class="btn-link{% if page.url == '/about/' %} active{% endif %}" href="{{site.baseurl}}/about">About</a>
+        <a class="btn-link{% if page.url == '/privacy-policy/' %} active{% endif %}" href="{{site.baseurl}}/privacy-policy">Privacy</a>
+        <a class="btn-link{% if page.url == '/terms/' %} active{% endif %}" href="{{site.baseurl}}/terms">Terms</a>
+        <a class="btn-link{% if page.url == '/contact/' %} active{% endif %}" href="{{site.baseurl}}/contact">Support</a>
     </nav>
     <a href="#" class="navbar-toggler-container navTrigger">
         <img src="{{ site.baseurl }}/assets/images/menu-24px.svg" />
