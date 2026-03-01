@@ -8,7 +8,7 @@ permalink: /about/
 
 {% include topbar.html %}
 
-<div class="work">
+<div class="work stack">
   <h1>About Lefuse</h1>
   <p>Lefuse builds focused mobile apps that remove friction from everyday workflows.</p>
   <p>Lefuse is an independent product company established in 2011.</p>

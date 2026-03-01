@@ -1,5 +1,14 @@
 @import 'colors.sass'
 
+:root
+    --space-1: 4px
+    --space-2: 8px
+    --space-3: 12px
+    --space-4: 16px
+    --space-5: 24px
+    --space-6: 32px
+    --space-7: 48px
+
 body
     font-family: 'Arial', sans-serif
     display: block
@@ -94,12 +103,24 @@ strong
     font-weight: 900
     font-size: 24px
     line-height: 26px
+    min-height: 44px
     text-align: center
     text-decoration: none
     justify-content: center
     padding: .3em 1em
     &:hover
         text-decoration: none
+
+.stack
+    display: flex
+    flex-direction: column
+    gap: var(--space-5)
+
+.stack-sm
+    gap: var(--space-4)
+
+.stack-lg
+    gap: var(--space-6)
 
 .btn-sm
     border-radius: .3em

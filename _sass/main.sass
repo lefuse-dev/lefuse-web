@@ -91,11 +91,11 @@
         width: 50%
         h1
             justify-content: flex-start
-            margin-bottom: .5em
+            margin-bottom: 0
         .subtitle
             justify-content: flex-start
         .btn-cta
-            margin-top: 1.5em
+            margin-top: 0
 
         @media only screen and (max-width: 1035px)
             align-items: center
@@ -103,7 +103,7 @@
             padding: 2em
             width: 100%
             .btn-cta
-                margin-top: 1.5em !important
+                margin-top: 0 !important
 
 .call-to-action
     align-items: center
@@ -118,10 +118,10 @@
 .services
     display: flex
     flex-flow: column
-    padding: 5em 5em 2em 5em
+    padding: var(--space-7) var(--space-7) var(--space-6) var(--space-7)
     width: 100%
     @media only screen and (max-width: 1035px)
-        padding: 2em
+        padding: var(--space-6) var(--space-5)
     .services-container
         align-items: flex-start
         display: flex
@@ -218,7 +218,7 @@
 .work
     display: flex
     flex-flow: column
-    padding: 3em 5em 5em 5em
+    padding: var(--space-7) var(--space-7)
     width: 100%
     h2
         padding-bottom: 1.5em
@@ -260,7 +260,7 @@
             padding-top: 1em
 
     @media only screen and (max-width: 1035px)
-        padding: 2em
+        padding: var(--space-6) var(--space-5)
         h2
             padding-bottom: 0
         .work-item
@@ -287,10 +287,21 @@
     display: flex
     flex-flow: column
     justify-content: center
-    padding: 5em 5em 9em 5em
+    padding: var(--space-7) var(--space-7)
     width: 100%
+    .container
+        align-items: center
+        display: flex
+        flex-flow: column
+        gap: var(--space-5)
+        width: 100%
+    p
+        max-width: 800px
+        text-align: center
     @media only screen and (max-width: 1035px)
-        padding: 4em 2em 4.5em 2em
+        padding: var(--space-6) var(--space-5)
+        .container
+            gap: var(--space-4)
     h2
         color: #478BFB
         font-family: Arial Black
@@ -298,11 +309,9 @@
         font-weight: 900
         font-size: 64px
         line-height: 119.6%
-        margin-bottom: 1em
+        margin-bottom: 0
         text-align: center
         @media only screen and (max-width: 1035px)
-            margin-bottom: .6em
-
             font-size: 50px
 
 footer
@@ -406,7 +415,7 @@ footer
     background-color: #ACF0FF
     display: flex
     flex-flow: column
-    padding: 5em 5em 5em 5em
+    padding: var(--space-7) var(--space-7)
     .subtitle
         padding-top: .5em
     .case-tags-container
@@ -421,17 +430,17 @@ footer
             margin: .4em
             padding: .2em .9em
     @media only screen and (max-width: 1035px)
-        padding: 2em
+        padding: var(--space-6) var(--space-5)
 
 .contact-container
     align-items: center
     display: flex
     justify-content: center
     flex-flow: column
-    padding: 3em
+    padding: var(--space-7) var(--space-5)
     width: 100%
     .subtitle
-        margin-bottom: 2em
+        margin-bottom: var(--space-6)
     form
         align-items: center
         display: flex
@@ -474,6 +483,6 @@ footer
             margin-top: 2em
             width: 100%
     @media only screen and (max-width: 1035px)
-        padding: 1em
+        padding: var(--space-6) var(--space-5)
         form
             width: 100%
