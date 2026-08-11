@@ -8,7 +8,7 @@
   --surface-tint: #f2f6fb;
   --line: #d8e1eb;
   --blue: #245fbd;
-  --blue-dark: #17488f;
+  --brand-navy: #17488f;
   --blue-light: #dfeafa;
   --navy: #0d2138;
   --navy-light: #173653;
@@ -65,7 +65,7 @@ a {
 }
 
 a:hover {
-  color: var(--blue-dark);
+  color: var(--brand-navy);
 }
 
 :focus-visible {
@@ -159,7 +159,7 @@ ol:last-child {
 .product-category,
 .timeline-date {
   margin-bottom: 1rem;
-  color: var(--blue-dark);
+  color: var(--brand-navy);
   font-size: 0.76rem;
   font-weight: 760;
   letter-spacing: 0.14em;
@@ -267,7 +267,7 @@ ol:last-child {
 
 .primary-nav a:hover,
 .primary-nav a[aria-current="page"] {
-  color: var(--blue-dark);
+  color: var(--brand-navy);
   background: var(--surface-tint);
 }
 
@@ -290,7 +290,7 @@ ol:last-child {
   align-items: center;
   overflow: hidden;
   background:
-    radial-gradient(circle at 82% 28%, rgba(71, 139, 251, 0.14), transparent 31rem),
+    radial-gradient(circle at 82% 28%, rgba(23, 72, 143, 0.12), transparent 31rem),
     linear-gradient(180deg, #fbfcfe 0%, #ffffff 100%);
 }
 
@@ -303,7 +303,7 @@ ol:last-child {
 
 .hero-kicker {
   margin-bottom: 1rem;
-  color: var(--blue-dark);
+  color: var(--brand-navy);
   font-size: clamp(1.3rem, 2.7vw, 2rem);
   font-weight: 690;
   letter-spacing: -0.025em;
@@ -357,8 +357,8 @@ ol:last-child {
 
 .button--primary {
   color: var(--white);
-  background: var(--blue-dark);
-  border-color: var(--blue-dark);
+  background: var(--brand-navy);
+  border-color: var(--brand-navy);
   box-shadow: 0 9px 22px rgba(23, 72, 143, 0.16);
 }
 
@@ -375,7 +375,7 @@ ol:last-child {
 }
 
 .button--secondary:hover {
-  color: var(--blue-dark);
+  color: var(--brand-navy);
   background: var(--surface-tint);
   border-color: #95a8bc;
 }
@@ -430,7 +430,7 @@ button.button {
 .principle-number {
   display: block;
   margin-bottom: 3.2rem;
-  color: var(--blue-dark);
+  color: var(--brand-navy);
   font-size: 0.75rem;
   font-weight: 760;
   letter-spacing: 0.1em;
@@ -492,7 +492,7 @@ button.button {
 
 .page-hero {
   background:
-    radial-gradient(circle at 75% 35%, rgba(71, 139, 251, 0.12), transparent 26rem),
+    radial-gradient(circle at 75% 35%, rgba(23, 72, 143, 0.1), transparent 26rem),
     var(--surface);
 }
 
@@ -566,7 +566,7 @@ button.button {
   content: "✓";
   position: absolute;
   left: 0;
-  color: var(--blue-dark);
+  color: var(--brand-navy);
   font-weight: 800;
 }
 
@@ -589,7 +589,7 @@ button.button {
   content: counter(workflow, decimal-leading-zero);
   position: absolute;
   left: 0;
-  color: var(--blue-dark);
+  color: var(--brand-navy);
   font-size: 0.78rem;
   font-weight: 760;
   letter-spacing: 0.08em;
@@ -626,7 +626,7 @@ button.button {
   width: 0.8rem;
   height: 0.8rem;
   background: var(--white);
-  border: 3px solid var(--blue-dark);
+  border: 3px solid var(--brand-navy);
   border-radius: 50%;
 }
 
@@ -647,7 +647,7 @@ button.button {
 .timeline .historical-note {
   padding: 1rem 1.15rem;
   background: var(--surface-tint);
-  border-left: 3px solid var(--blue-dark);
+  border-left: 3px solid var(--brand-navy);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   font-size: 0.94rem;
 }
@@ -730,7 +730,7 @@ button.button {
 
 .form-field input:focus,
 .form-field textarea:focus {
-  border-color: var(--blue-dark);
+  border-color: var(--brand-navy);
   outline: 3px solid rgba(36, 95, 189, 0.22);
   outline-offset: 1px;
 }

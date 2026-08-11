@@ -2,7 +2,7 @@
 layout: default
 meta_title: About | Lefuse
 title: About Lefuse
-description: Lefuse is an independent product company with roots in 2011, building digital products around clarity, useful workflows, and meaningful outcomes.
+description: Lefuse is a product company with roots in 2011, building products around clarity, useful workflows, and meaningful outcomes.
 permalink: /about/
 schema_type: AboutPage
 redirect_from:
@@ -12,7 +12,7 @@ redirect_from:
 <section class="page-hero section">
   <div class="shell narrow">
     <p class="eyebrow">About Lefuse</p>
-    <h1>Independent product thinking, since 2011.</h1>
+    <h1>Product thinking, since 2011.</h1>
     <p class="page-intro">Lefuse builds digital products that reduce friction between what people intend to do and the outcomes they want to reach.</p>
   </div>
 </section>
@@ -27,7 +27,7 @@ redirect_from:
       <li>
         <p class="timeline-date">2011</p>
         <h3>Lefuse begins</h3>
-        <p>An independent company begins exploring how thoughtful digital products can make useful actions easier to complete.</p>
+        <p>Lefuse begins exploring how thoughtful digital products can make useful actions easier to complete.</p>
       </li>
       <li>
         <p class="timeline-date">2012–2013</p>
