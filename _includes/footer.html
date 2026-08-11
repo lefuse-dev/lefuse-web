@@ -1,35 +1,31 @@
-<footer>
-    <div class="content-left">
-      <a href="{{site.baseurl}}/" class="logo-white"></a>
-      <p>Lefuse builds focused mobile apps that remove friction from everyday workflows.</p>
-      <div class="social-links">
-        <a href="https://twitter.com/lefusenetwork" target="_blank" class="social-link twitter"></a>
-        <a href="https://www.youtube.com/@lefusenetwork" target="_blank" class="social-link youtube"></a>
-        <a href="https://github.com/lefusenetwork" target="_blank" class="social-link github"></a>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div class="footer-intro">
+      <a class="footer-brand" href="{{ "/" | relative_url }}" aria-label="Lefuse home">
+        <img src="{{ "/assets/images/logo-white.svg" | relative_url }}" width="202" height="43" alt="">
+      </a>
+      <p>An independent product company building clearer paths from intent to outcome.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="{{ "/products/" | relative_url }}">Products</a></li>
+          <li><a href="{{ "/about/" | relative_url }}">About</a></li>
+          <li><a href="{{ "/contact/" | relative_url }}">Contact</a></li>
+        </ul>
       </div>
-    </div>
-  
-    <div class="columns-container">
-      <div class="col">
-        <h3>NAVIGATION</h3>
-        <a href="{{site.baseurl}}/" class="btn-link">Home</a>
-        <a href="{{site.baseurl}}/products" class="btn-link">Products</a>
-        <a href="{{site.baseurl}}/about" class="btn-link">About</a>
-        <a href="{{site.baseurl}}/contact" class="btn-link">Support</a>
+      <div>
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="{{ "/privacy-policy/" | relative_url }}">Privacy</a></li>
+          <li><a href="{{ "/terms/" | relative_url }}">Terms</a></li>
+        </ul>
       </div>
-      
-      <div class="col">
-        <h3>LEGAL</h3>
-        <a href="{{site.baseurl}}/privacy-policy" class="btn-link">Privacy Policy</a>
-        <a href="{{site.baseurl}}/terms" class="btn-link">Terms</a>
-      </div>
-    </div>
-  
-    <div class="content-right">
-      <a href="{{site.baseurl}}/contact" class="btn btn-cta-blue">Contact Support</a>
-    </div>
-  
-    <div class="rights-reserved">
-      <p>&copy; 2011&ndash;{{ "now" | date: "%Y" }} Lefuse</p>
-    </div>
-  </footer>
+    </nav>
+  </div>
+  <div class="shell footer-bottom">
+    <p>&copy; 2011&ndash;{{ "now" | date: "%Y" }} Lefuse.</p>
+    <p>Building independent digital products since 2011.</p>
+  </div>
+</footer>

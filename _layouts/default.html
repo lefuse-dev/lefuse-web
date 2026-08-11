@@ -1,8 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    {% include imports/head.html %}
-<body>
-    {{ content }}
-    {% include imports/js.html %}    
-</body>
+<!doctype html>
+<html lang="{{ site.lang | default: "en" }}">
+  {% include imports/head.html %}
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include topbar.html %}
+    <main id="main-content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    {% include imports/js.html %}
+  </body>
 </html>

@@ -1,16 +1,67 @@
 ---
 layout: default
-title: Products | Lefuse
-description: Focused mobile apps that remove friction from everyday workflows.
-keywords: Lefuse products, Lefuse Finance, mobile-first personal finance app
+meta_title: Products | Lefuse
+title: Lefuse products
+description: Glassr brings clarity to financial activity, while AutoFillr reduces repetitive work in purchase-ticket and invoicing workflows.
 permalink: /products/
+schema_type: CollectionPage
+schema_products: true
+redirect_from:
+  - /what-we-do
 ---
 
-{% include topbar.html %}
-<div class="services stack">
-  <h1>Our Products</h1>
-  <h3>Lefuse Finance</h3>
-  <p class="subtitle">A mobile-first personal finance app designed to help you track, understand, and improve your financial habits - simply and securely.</p>
-  <p class="subtitle">Lefuse builds focused mobile apps that remove friction from everyday workflows.</p>
-</div>
-{% include footer.html %}
+<section class="page-hero section">
+  <div class="shell narrow">
+    <p class="eyebrow">Lefuse products</p>
+    <h1>Software for clearer follow-through.</h1>
+    <p class="page-intro">Lefuse is the company behind Glassr and AutoFillr. Each product has its own purpose and identity; both simplify the work between intent and outcome.</p>
+  </div>
+</section>
+
+<section class="section section--bordered" aria-labelledby="current-products-heading">
+  <div class="shell">
+    <h2 class="visually-hidden" id="current-products-heading">Current products</h2>
+    <div class="product-detail-list">
+      {% for product in site.data.products.current %}
+      <article class="product-detail" id="{{ product.slug }}">
+        <div class="product-detail__heading">
+          <p class="product-category">{{ product.category }}</p>
+          <h3>{{ product.name }}</h3>
+          <p class="product-parent">A Lefuse product.</p>
+        </div>
+        <div class="product-detail__body">
+          <p class="product-statement">{{ product.summary }}</p>
+          <p>{{ product.description }}</p>
+          {% if product.slug == "glassr" %}
+          <h4>What it helps make clearer</h4>
+          <ul class="check-list">
+            <li>Everyday financial activity</li>
+            <li>Awareness of what that activity means</li>
+            <li>The information behind better-informed decisions</li>
+          </ul>
+          {% else %}
+          <h4>How the workflow fits together</h4>
+          <ol class="workflow-list">
+            <li><span>Capture</span> Gather purchase-ticket information.</li>
+            <li><span>Structure</span> Organize the details into a clearer working format.</li>
+            <li><span>Review</span> Keep a person in control before continuing.</li>
+            <li><span>Continue</span> Use a browser extension with compatible merchant portals to support the invoicing workflow.</li>
+          </ol>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="shared-focus-heading">
+  <div class="shell split-intro">
+    <p class="eyebrow">Shared focus</p>
+    <div>
+      <h2 id="shared-focus-heading">Why they belong together</h2>
+      <p class="section-lead">Glassr helps turn financial activity into awareness. AutoFillr helps turn purchase-ticket information into a more structured invoicing path. Both products make important workflows easier to see, review, and carry forward.</p>
+      <a class="text-link" href="{{ "/about/" | relative_url }}">Learn about the company <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>

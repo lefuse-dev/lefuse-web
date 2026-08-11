@@ -1,0 +1,63 @@
+{% assign schema_title = page.meta_title | default: page.title | default: site.title %}
+{% assign schema_description = page.description | default: site.description %}
+{% assign schema_type = page.schema_type | default: "WebPage" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ "/#organization" | absolute_url }}",
+      "name": "Lefuse",
+      "url": "{{ "/" | absolute_url }}",
+      "description": {{ site.description | jsonify }},
+      "foundingDate": "2011",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ "/assets/images/logo.svg" | absolute_url }}",
+        "width": 202,
+        "height": 43
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ "/#website" | absolute_url }}",
+      "url": "{{ "/" | absolute_url }}",
+      "name": "Lefuse",
+      "description": {{ site.description | jsonify }},
+      "publisher": { "@id": "{{ "/#organization" | absolute_url }}" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "{{ schema_type }}",
+      "@id": "{{ page.url | absolute_url }}#webpage",
+      "url": "{{ page.url | absolute_url }}",
+      "name": {{ schema_title | jsonify }},
+      "description": {{ schema_description | jsonify }},
+      "isPartOf": { "@id": "{{ "/#website" | absolute_url }}" },
+      "about": { "@id": "{{ "/#organization" | absolute_url }}" },
+      "inLanguage": "en"{% if page.schema_products %},
+      "hasPart": [
+        { "@id": "{{ "/products/#glassr" | absolute_url }}" },
+        { "@id": "{{ "/products/#autofillr" | absolute_url }}" }
+      ]{% endif %}
+    }{% if page.schema_products %},
+    {
+      "@type": "SoftwareApplication",
+      "@id": "{{ "/products/#glassr" | absolute_url }}",
+      "name": {{ site.data.products.current[0].name | jsonify }},
+      "description": {{ site.data.products.current[0].summary | jsonify }},
+      "url": "{{ "/products/#glassr" | absolute_url }}",
+      "creator": { "@id": "{{ "/#organization" | absolute_url }}" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "{{ "/products/#autofillr" | absolute_url }}",
+      "name": {{ site.data.products.current[1].name | jsonify }},
+      "description": {{ site.data.products.current[1].summary | jsonify }},
+      "url": "{{ "/products/#autofillr" | absolute_url }}",
+      "creator": { "@id": "{{ "/#organization" | absolute_url }}" }
+    }{% endif %}
+  ]
+}
+</script>

@@ -1,14 +1,21 @@
-<div class="topbar">
-    <a href="{{site.baseurl}}/" class="logo"></a>
-    <nav class="nav">
-        <a class="btn-link{% if page.url == '/' %} active{% endif %}" href="{{site.baseurl}}/">Home</a>
-        <a class="btn-link{% if page.url == '/products/' %} active{% endif %}" href="{{site.baseurl}}/products">Products</a>
-        <a class="btn-link{% if page.url == '/about/' %} active{% endif %}" href="{{site.baseurl}}/about">About</a>
-        <a class="btn-link{% if page.url == '/privacy-policy/' %} active{% endif %}" href="{{site.baseurl}}/privacy-policy">Privacy</a>
-        <a class="btn-link{% if page.url == '/terms/' %} active{% endif %}" href="{{site.baseurl}}/terms">Terms</a>
-        <a class="btn-link{% if page.url == '/contact/' %} active{% endif %}" href="{{site.baseurl}}/contact">Support</a>
-    </nav>
-    <a href="#" class="navbar-toggler-container navTrigger">
-        <img src="{{ site.baseurl }}/assets/images/menu-24px.svg" />
+<header class="site-header">
+  <div class="site-header__inner shell">
+    <a class="brand" href="{{ "/" | relative_url }}" aria-label="Lefuse home">
+      <img src="{{ "/assets/images/logo.svg" | relative_url }}" width="202" height="43" alt="">
     </a>
-</div>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span>Menu</span>
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Primary">
+      <ul>
+        <li><a{% if page.url == "/" %} aria-current="page"{% endif %} href="{{ "/" | relative_url }}">Home</a></li>
+        <li><a{% if page.url == "/products/" %} aria-current="page"{% endif %} href="{{ "/products/" | relative_url }}">Products</a></li>
+        <li><a{% if page.url == "/about/" %} aria-current="page"{% endif %} href="{{ "/about/" | relative_url }}">About</a></li>
+        <li><a{% if page.url == "/contact/" %} aria-current="page"{% endif %} href="{{ "/contact/" | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

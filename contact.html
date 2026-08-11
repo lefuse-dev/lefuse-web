@@ -1,15 +1,27 @@
 ---
 layout: default
-title: Support & Contact | Lefuse
-description: Contact Lefuse for product support and general inquiries.
-keywords: Lefuse support, contact Lefuse, mobile app support
+meta_title: Contact | Lefuse
+title: Contact Lefuse
+description: Contact Lefuse for product support, privacy questions, or general inquiries.
 permalink: /contact/
-subtitle: Lefuse builds focused mobile apps that remove friction from everyday workflows.
-tags: [Support, Contact]
+schema_type: ContactPage
 ---
 
-{% include topbar.html %}
-{% include case-cover.html %}
-{% include contact-form.html %}
-{% include CTA.html %}
-{% include footer.html %}
+<section class="page-hero section">
+  <div class="shell narrow">
+    <p class="eyebrow">Contact</p>
+    <h1>Start a conversation.</h1>
+    <p class="page-intro">Use the form for product support, privacy questions, or general inquiries. Share only the information needed for us to understand your request.</p>
+  </div>
+</section>
+
+<section class="section section--bordered">
+  <div class="shell contact-layout">
+    <div class="contact-context">
+      <h2>How can we help?</h2>
+      <p>Tell us which Lefuse product or topic your message is about, along with the best way to respond.</p>
+      <p class="contact-privacy">Before sending personal information, review our <a href="{{ "/privacy-policy/" | relative_url }}">privacy policy</a>.</p>
+    </div>
+    {% include contact-form.html %}
+  </div>
+</section>

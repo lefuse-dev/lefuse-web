@@ -1,25 +1,21 @@
 ---
-permalink: /404.html
 layout: default
+meta_title: Page not found | Lefuse
+description: The requested page could not be found on the Lefuse website.
+permalink: /404.html
+robots: noindex, follow
+sitemap: false
+schema: false
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<section class="section not-found">
+  <div class="shell narrow">
+    <p class="error-code" aria-hidden="true">404</p>
+    <h1>That path ends here.</h1>
+    <p class="page-intro">The page may have moved or the address may be incomplete. Continue from one of the paths below.</p>
+    <div class="button-row">
+      <a class="button button--primary" href="{{ "/" | relative_url }}">Go home</a>
+      <a class="button button--secondary" href="{{ "/products/" | relative_url }}">Explore products</a>
+    </div>
+  </div>
+</section>

@@ -1,16 +1,31 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <!-- SEO & Social Meta Tags -->
-    {% seo %}
-  
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
-  
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  
-    <!-- Styles -->
-    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | prepend: site.baseurl }}">
-  </head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% assign meta_title = page.meta_title | default: page.title | default: site.title %}
+  {% assign meta_description = page.description | default: site.description %}
+  {% assign meta_image = page.image | default: site.social_image %}
+  <title>{{ meta_title | escape }}</title>
+  <meta name="description" content="{{ meta_description | escape }}">
+  {% if page.robots %}<meta name="robots" content="{{ page.robots | escape }}">{% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ meta_title | escape }}">
+  <meta property="og:description" content="{{ meta_description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ meta_image | absolute_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lefuse — From intent to done.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ meta_title | escape }}">
+  <meta name="twitter:description" content="{{ meta_description | escape }}">
+  <meta name="twitter:image" content="{{ meta_image | absolute_url }}">
+
+  <link rel="icon" href="{{ "/assets/images/favicon.svg" | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ "/assets/images/apple-touch-icon.png" | relative_url }}">
+  <meta name="theme-color" content="#f7f9fc">
+  <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+  {% unless page.schema == false %}{% include schema.html %}{% endunless %}
+</head>

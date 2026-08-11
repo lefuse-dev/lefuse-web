@@ -1,0 +1,11 @@
+current:
+  - slug: glassr
+    name: Glassr
+    category: Financial clarity
+    summary: Turn everyday financial activity into clearer awareness and better decisions.
+    description: Glassr is a Lefuse product focused on making financial activity easier to understand, so awareness can lead to more informed decisions.
+  - slug: autofillr
+    name: AutoFillr
+    category: Invoicing workflow
+    summary: Less repetitive work between a purchase ticket and the invoicing process.
+    description: AutoFillr helps organize purchase tickets, structure their information, support human review, and continue invoicing through a browser-extension workflow in compatible merchant portals.

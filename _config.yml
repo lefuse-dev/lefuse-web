@@ -1,37 +1,29 @@
 title: Lefuse
-email: partners@lefuse.com
-description: Focused mobile apps that remove friction from everyday workflows.
-baseurl: "" # Keep this empty if deploying to root of domain
-url: "https://lefuse.com" # Update this with your actual domain
-twitter_username: lefusenetwork
-github_username: lefuse
-
-# SEO & Social Media Meta
+description: Lefuse is an independent product company that builds software to simplify the workflows between intent and outcome.
+url: "https://www.lefuse.com"
+baseurl: ""
 lang: en
-logo: /assets/images/cover.svg
+theme: null
 
-# Plugins
-theme: minima
+logo: /assets/images/logo.svg
+social_image: /assets/images/social-card.jpg
+
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag # Add this for better SEO metadata
-  - jekyll-sitemap # Optional but recommended
+  - jekyll-redirect-from
+  - jekyll-sitemap
 
-# Sitemap config (if jekyll-sitemap is used)
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
-      changefreq: monthly
-      priority: 0.5
+      layout: default
+      image: /assets/images/social-card.jpg
 
-# Collections (cleaned)
-# Removed 'cases' collection
+sass:
+  style: compressed
 
-# Optional - exclude unnecessary files
 exclude:
   - README.md
-  - node_modules/
   - Gemfile
   - Gemfile.lock
+  - vendor/
